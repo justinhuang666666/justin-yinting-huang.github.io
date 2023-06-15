@@ -93,25 +93,26 @@
         <div class="row gy-4">
 
           <div class="col-lg-8">
-            <img src="assets/img/portfolio/arch.jpeg" width="120%" alt="">
+            <img src="assets/img/portfolio/arch.jpeg" width="100%" alt="">
           </div>
 
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Project information</h3>
+              <h3>RISC-V CPU</h3>
               <ul>
-                <li>Category: Digital System Design</li>
-                <li>Skills Used: SystemVerilog, Quartus, Cyclone-V FPGA, CORDIC, Monte Carlo simulation</li>
+                <li>Category: Computer Architecture and Digital System Design</li>
+                <li>Skills Used: SystemVerilog, Verilator, RISC-V, Gtkwave, C++, Bash</li>
               </ul>
             </div>
             <div class="portfolio-description">
-              <p>
-                This is a mathematical function accelerator based on Cyclone-V FPGA. 
-                The target function consists of floating-point substraction, vector summation, multiplication and trigonometry function.
-                The implementation utilises NiosII soft processor core and its custom instruction interface to interact with the accelerator. 
-                The accelerator uses floating-point IPs provided by Intel and CORDIC hardware designed by ourself. 
-                By implementing a pipeline structure, the accelerator achieves a significant increase in throughput while minimizing latency.
-              </p>
+              <ul>
+                <li>-	Collaborated with 4 students under the supervision of Professor Peter Y. K. Cheung</li>
+                <li>Implemented a 5-stage pipelined RISC-V CPU model solution for future year 2 students, written in SystemVerilog with RV32IM ISA and subsets from other extensions to accommodate for interrupt handling</li>
+                <li>Debugged at block level and CPU level using RISC-V assembly program, C++ testbench, Verilator, and Gtkwave. The C++ testbench contains a virtual RAM module that supports Wishbone B4 classic interface</li>
+                <li>Implemented a multi-cycled multiplier and divider block with microarchitecture that optimises successive DIV and REM instructions on the same operands</li>
+                <li>Implemented a directly mapped, write-through and (ongoing) set associative, LRU, write-back cache controller</li>
+                <li>The final design is synthesised using Vivado and configured the clock period for 15ns (66.6 MHz) which is 5 times faster than the non-pipelined MIPS CPU designed previously</li>
+              </ul>
             </div>
           </div>
 
