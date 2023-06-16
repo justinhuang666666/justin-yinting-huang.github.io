@@ -106,12 +106,14 @@
             </div>
             <div class="portfolio-description">
               <p>
+                Wrote the embedded software for a music synthesizer keyboard in a team of 4. Supported a variety of features, including:
                 <ul>
+                  <li>The key matrix is used to identify the key being pressed and output the corrsponding frequency via DAC</li>
                   <li>The keyboard can output tones with different frequency, volume and tone color</li>
                   <li>The keyboard has function such as echo, filtering and ADSR</li>
-                  <li>The key matrix is used to identify the key being pressed and output the corrsponding frequency via DAC</li>
-                  <li>Pairs of keyboards communicate with each other via CAN bus</li>
+                  <li>Pairs of keyboards communicate with each other via CAN bus, which can be attached and detached from one another to play notes together</li>
                 </ul> 
+                Tasks were allocated to either threads or interrupts based on their priority, ensuring efficient task management. To ensure thread safety, mutexes, semaphores, and critical sections were implemented. Performance-critical tasks were carefully analyzed, optimized, and profiled to ensure that all functions were executed within their specified time constraints.
               </p>
             </div>
           </div>
